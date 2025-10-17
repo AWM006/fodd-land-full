@@ -122,10 +122,46 @@
 </div>
 
 
-<div class="go-to-cart-popup" id="goToCartPopup">
+  <div class="go-to-cart-popup" id="goToCartPopup">
     <p>Item added to cart!</p>
     <button class="carting">Go to Cart</button>
   </div>
+
+<footer class="bg-dark text-white p-4">
+  <div class="container-fluid">
+    <div class="d-flex justify-content-around flex-wrap text-start">
+
+      <div class="mb-3">
+        <h5>Have a Complaint?</h5>
+        <form action="./files/php/complain.php" method="post">
+          <div class="mb-2">
+            <input type="tel" maxlength="10" minlength="10" class="form-control" placeholder="Your phone" name="phone" required>
+          </div>
+          <div class="mb-2">
+            <textarea class="form-control" rows="3" placeholder="Your Complaint" name="detail" required></textarea>
+          </div>
+          <button type="submit" name="submit" class="btn btn-sm" style="background-color:brown;color:white;">Submit</button>
+        </form>
+      </div>
+      <br>
+      <div>
+        <h5>Our Address</h5>
+        <p class="mb-0">
+          Food Land Pvt. Ltd.<br>
+          Hospital Mor, Barsul - 713124<br>
+          West Bengal, India<br>
+          Phone: +91 74688 04974<br>
+        </p>
+      </div>
+
+    </div>
+
+    <hr>
+    <p class="text-center mb-0">&copy; 2025 Food Land.</p>
+  </div>
+</footer>
+
+
 
   <script src="files/script/script.js"></script>
   <script src="files/script/cart.js"></script>
